@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e9860283">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f85dc5b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7882,7 +7882,7 @@ Now I improve it with <strong>pure pursuit</strong>, a very popular path trackin
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7dfb8673">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=aa558a72">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7898,6 +7898,7 @@ Now I improve it with <strong>pure pursuit</strong>, a very popular path trackin
     <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">"git"</span><span class="p">,</span> <span class="s2">"clone"</span><span class="p">,</span> <span class="s2">"--depth"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span>
                     <span class="s2">"https://github.com/Umadin1827/robot-project.git"</span><span class="p">],</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s2">"robot-project"</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>                    <span class="c1"># make "import src" work in every notebook program</span>
 
 <span class="n">missing</span><span class="p">,</span> <span class="n">other</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>                            <span class="c1"># compare with the versions pinned in requirements.txt</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"requirements.txt"</span><span class="p">):</span>
@@ -7933,7 +7934,7 @@ other versions in this session: none, all pinned versions are used
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d88625f1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f4830661">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7978,7 +7979,7 @@ other versions in this session: none, all pinned versions are used
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd44b49c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8811139e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7993,7 +7994,7 @@ The robot has to get within 5 cm of every waypoint before it goes on.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3ad9a8dc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ee905703">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8038,7 +8039,7 @@ The robot has to get within 5 cm of every waypoint before it goes on.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f6004303">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=80d1569d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8050,7 +8051,7 @@ The robot has to get within 5 cm of every waypoint before it goes on.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b5f610b2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cfd8091f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8103,7 +8104,7 @@ The robot has to get within 5 cm of every waypoint before it goes on.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5c07548a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=61f9831c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8120,7 +8121,7 @@ The robot has to get within 5 cm of every waypoint before it goes on.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8a4d48d1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c86d7b14">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8161,7 +8162,7 @@ The robot has to get within 5 cm of every waypoint before it goes on.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=76d9d010">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=49263ca7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8174,7 +8175,7 @@ The robot has to get within 5 cm of every waypoint before it goes on.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6bff7546">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d08ab5a9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8206,7 +8207,7 @@ alpha = 90 deg, Ld = 0.5 m : R = 0.25 m  -&gt; very sharp turn
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7e941df4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a3eeff41">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8217,7 +8218,7 @@ alpha = 90 deg, Ld = 0.5 m : R = 0.25 m  -&gt; very sharp turn
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c853f454">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d383c11e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8228,7 +8229,7 @@ The step <code>dt</code> is 0.01 s, the voltage limit is ±8 V (like the PWM lim
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0d1f308c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=111e647b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8260,7 +8261,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21d86d09">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=673d10f0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8317,7 +8318,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=63906e2d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d7ca58cf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8359,7 +8360,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67e5d0e3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7499268d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8370,7 +8371,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9d66f9c3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c73e9de5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8384,7 +8385,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=116efd2a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4be55f9b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8429,7 +8430,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=268dfc68">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b6b55b8c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8444,7 +8445,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e5ce83b9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1e1c9716">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8474,7 +8475,7 @@ top speed of one wheel at 8.0 V: v_max = 0.416 m/s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0ab2fdee">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e82ea02f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8486,7 +8487,7 @@ Here the robot is placed a bit beside the path and a bit turned away.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=29c05b43">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9bce26ff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8533,7 +8534,7 @@ Here the robot is placed a bit beside the path and a bit turned away.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0e5e0369">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fbf25eaa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8543,7 +8544,7 @@ Here the robot is placed a bit beside the path and a bit turned away.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=83dd08ea">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d6399253">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8579,7 +8580,7 @@ check: (v_r - v_l)/B = 0.916 rad/s   and   v*kappa = 0.916 rad/s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=087b9d34">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=948df00b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8613,7 +8614,7 @@ check: (v_r - v_l)/B = 0.916 rad/s   and   v*kappa = 0.916 rad/s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f83feaa">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5102dd0e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8624,7 +8625,7 @@ check: (v_r - v_l)/B = 0.916 rad/s   and   v*kappa = 0.916 rad/s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6218644a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0ffeefd8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8665,7 +8666,7 @@ check: (v_r - v_l)/B = 0.916 rad/s   and   v*kappa = 0.916 rad/s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c8ce387b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cea493f4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8880,36 +8881,36 @@ input[type=range].anim-slider {
 }
 </style>
 <div class="animation">
-<img alt="No description has been provided for this image" id="_anim_img986c5bc159d245288d36592aa07e2ffe"/>
+<img alt="No description has been provided for this image" id="_anim_imge3163d3fb4424567859228a5514d5433"/>
 <div class="anim-controls">
-<input class="anim-slider" id="_anim_slider986c5bc159d245288d36592aa07e2ffe" max="1" min="0" name="points" oninput="anim986c5bc159d245288d36592aa07e2ffe.set_frame(parseInt(this.value));" step="1" type="range" value="0"/>
+<input class="anim-slider" id="_anim_slidere3163d3fb4424567859228a5514d5433" max="1" min="0" name="points" oninput="anime3163d3fb4424567859228a5514d5433.set_frame(parseInt(this.value));" step="1" type="range" value="0"/>
 <div class="anim-buttons">
-<button aria-label="Decrease speed" onclick="anim986c5bc159d245288d36592aa07e2ffe.slower()" title="Decrease speed">
+<button aria-label="Decrease speed" onclick="anime3163d3fb4424567859228a5514d5433.slower()" title="Decrease speed">
 <i class="fa fa-minus"></i></button>
-<button aria-label="First frame" onclick="anim986c5bc159d245288d36592aa07e2ffe.first_frame()" title="First frame">
+<button aria-label="First frame" onclick="anime3163d3fb4424567859228a5514d5433.first_frame()" title="First frame">
 <i class="fa fa-fast-backward"></i></button>
-<button aria-label="Previous frame" onclick="anim986c5bc159d245288d36592aa07e2ffe.previous_frame()" title="Previous frame">
+<button aria-label="Previous frame" onclick="anime3163d3fb4424567859228a5514d5433.previous_frame()" title="Previous frame">
 <i class="fa fa-step-backward"></i></button>
-<button aria-label="Play backwards" onclick="anim986c5bc159d245288d36592aa07e2ffe.reverse_animation()" title="Play backwards">
+<button aria-label="Play backwards" onclick="anime3163d3fb4424567859228a5514d5433.reverse_animation()" title="Play backwards">
 <i class="fa fa-play fa-flip-horizontal"></i></button>
-<button aria-label="Pause" onclick="anim986c5bc159d245288d36592aa07e2ffe.pause_animation()" title="Pause">
+<button aria-label="Pause" onclick="anime3163d3fb4424567859228a5514d5433.pause_animation()" title="Pause">
 <i class="fa fa-pause"></i></button>
-<button aria-label="Play" onclick="anim986c5bc159d245288d36592aa07e2ffe.play_animation()" title="Play">
+<button aria-label="Play" onclick="anime3163d3fb4424567859228a5514d5433.play_animation()" title="Play">
 <i class="fa fa-play"></i></button>
-<button aria-label="Next frame" onclick="anim986c5bc159d245288d36592aa07e2ffe.next_frame()" title="Next frame">
+<button aria-label="Next frame" onclick="anime3163d3fb4424567859228a5514d5433.next_frame()" title="Next frame">
 <i class="fa fa-step-forward"></i></button>
-<button aria-label="Last frame" onclick="anim986c5bc159d245288d36592aa07e2ffe.last_frame()" title="Last frame">
+<button aria-label="Last frame" onclick="anime3163d3fb4424567859228a5514d5433.last_frame()" title="Last frame">
 <i class="fa fa-fast-forward"></i></button>
-<button aria-label="Increase speed" onclick="anim986c5bc159d245288d36592aa07e2ffe.faster()" title="Increase speed">
+<button aria-label="Increase speed" onclick="anime3163d3fb4424567859228a5514d5433.faster()" title="Increase speed">
 <i class="fa fa-plus"></i></button>
 </div>
-<form action="#n" aria-label="Repetition mode" class="anim-state" name="_anim_loop_select986c5bc159d245288d36592aa07e2ffe" title="Repetition mode">
-<input id="_anim_radio1_986c5bc159d245288d36592aa07e2ffe" name="state" type="radio" value="once"/>
-<label for="_anim_radio1_986c5bc159d245288d36592aa07e2ffe">Once</label>
-<input checked="" id="_anim_radio2_986c5bc159d245288d36592aa07e2ffe" name="state" type="radio" value="loop"/>
-<label for="_anim_radio2_986c5bc159d245288d36592aa07e2ffe">Loop</label>
-<input id="_anim_radio3_986c5bc159d245288d36592aa07e2ffe" name="state" type="radio" value="reflect"/>
-<label for="_anim_radio3_986c5bc159d245288d36592aa07e2ffe">Reflect</label>
+<form action="#n" aria-label="Repetition mode" class="anim-state" name="_anim_loop_selecte3163d3fb4424567859228a5514d5433" title="Repetition mode">
+<input id="_anim_radio1_e3163d3fb4424567859228a5514d5433" name="state" type="radio" value="once"/>
+<label for="_anim_radio1_e3163d3fb4424567859228a5514d5433">Once</label>
+<input checked="" id="_anim_radio2_e3163d3fb4424567859228a5514d5433" name="state" type="radio" value="loop"/>
+<label for="_anim_radio2_e3163d3fb4424567859228a5514d5433">Loop</label>
+<input id="_anim_radio3_e3163d3fb4424567859228a5514d5433" name="state" type="radio" value="reflect"/>
+<label for="_anim_radio3_e3163d3fb4424567859228a5514d5433">Reflect</label>
 </form>
 </div>
 </div>
@@ -8917,9 +8918,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img986c5bc159d245288d36592aa07e2ffe";
-    var slider_id = "_anim_slider986c5bc159d245288d36592aa07e2ffe";
-    var loop_select_id = "_anim_loop_select986c5bc159d245288d36592aa07e2ffe";
+    var img_id = "_anim_imge3163d3fb4424567859228a5514d5433";
+    var slider_id = "_anim_slidere3163d3fb4424567859228a5514d5433";
+    var loop_select_id = "_anim_loop_selecte3163d3fb4424567859228a5514d5433";
     var frames = new Array(91);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAE6CAYAAAD0u4EbAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -46974,7 +46975,7 @@ IiLi1f4fzmbd3nITX/wAAAAASUVORK5CYII=\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim986c5bc159d245288d36592aa07e2ffe = new Animation(frames, img_id, slider_id, 80.0,
+        anime3163d3fb4424567859228a5514d5433 = new Animation(frames, img_id, slider_id, 80.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -46984,7 +46985,7 @@ IiLi1f4fzmbd3nITX/wAAAAASUVORK5CYII=\
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=69e8cc71">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=daf64acf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -46995,7 +46996,7 @@ IiLi1f4fzmbd3nITX/wAAAAASUVORK5CYII=\
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4fd8519d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1fb51d62">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47026,7 +47027,7 @@ IiLi1f4fzmbd3nITX/wAAAAASUVORK5CYII=\
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ebc6d6b0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=35f20ac4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47036,7 +47037,7 @@ IiLi1f4fzmbd3nITX/wAAAAASUVORK5CYII=\
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fb8fbd8f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=878ac3f1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47070,7 +47071,7 @@ check 2 OK  R = 3.0 m:  kappa = 0.333333  1/R = 0.333333
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4e6e0d25">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f0b63dde">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47080,7 +47081,7 @@ check 2 OK  R = 3.0 m:  kappa = 0.333333  1/R = 0.333333
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5edf8e11">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d2bf07f1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47114,7 +47115,7 @@ check 2 OK  R = 3.0 m:  kappa = 0.333333  1/R = 0.333333
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ec8457e4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7113a48a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47124,7 +47125,7 @@ check 2 OK  R = 3.0 m:  kappa = 0.333333  1/R = 0.333333
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d07b926e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=45770eae">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47162,7 +47163,7 @@ check 2 OK  R = 3.0 m:  kappa = 0.333333  1/R = 0.333333
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=68470bfe">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d80953a0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47208,14 +47209,14 @@ check 2 OK  R = 3.0 m:  kappa = 0.333333  1/R = 0.333333
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>.                                                                [100%]
-9 passed in 0.85s
+9 passed in 1.15s
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=26bff25d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f817998a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47226,7 +47227,7 @@ check 2 OK  R = 3.0 m:  kappa = 0.333333  1/R = 0.333333
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c785d471">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3a178f82">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47275,7 +47276,7 @@ largest steering angle difference: 9.4e-16 rad
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7954e1e7">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=61f805ab">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47286,7 +47287,7 @@ largest steering angle difference: 9.4e-16 rad
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c5302a00">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bd60a2a8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47337,7 +47338,7 @@ largest error of pure pursuit at t = 1.1 s (the start), waypoint P at t = 2.0 s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9c214f6b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=841837d3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47347,7 +47348,7 @@ largest error of pure pursuit at t = 1.1 s (the start), waypoint P at t = 2.0 s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=33631199">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5e7443a0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47384,7 +47385,7 @@ largest error of pure pursuit at t = 1.1 s (the start), waypoint P at t = 2.0 s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6ba898e4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ac686672">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47395,7 +47396,7 @@ largest error of pure pursuit at t = 1.1 s (the start), waypoint P at t = 2.0 s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c44b682d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=831c1e79">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47437,7 +47438,7 @@ largest error of pure pursuit at t = 1.1 s (the start), waypoint P at t = 2.0 s
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=15543590">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3428c6f1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47448,7 +47449,7 @@ Hint: $\omega = v\kappa$ and $v_r - v_l = B\,\omega$, and the mean of the two wh
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1802822d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c2158767">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47485,7 +47486,7 @@ Hint: $\omega = v\kappa$ and $v_r - v_l = B\,\omega$, and the mean of the two wh
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=075e38c9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c5422043">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47496,7 +47497,7 @@ The starter cell sweeps $L_d$ and plots the RMS error. <strong>TODO:</strong> al
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bf062f28">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8fa59d9b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47530,7 +47531,7 @@ The starter cell sweeps $L_d$ and plots the RMS error. <strong>TODO:</strong> al
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f2c54c13">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=43a04fbf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47546,7 +47547,7 @@ The starter cell sweeps $L_d$ and plots the RMS error. <strong>TODO:</strong> al
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c9c6fe2d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=001617fd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -47583,7 +47584,7 @@ The starter cell sweeps $L_d$ and plots the RMS error. <strong>TODO:</strong> al
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9102903d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8b2a7790">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
