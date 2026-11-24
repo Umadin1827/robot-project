@@ -5,13 +5,13 @@
 ## What reproduced
 - **The PythonRobotics pure pursuit example.** I wrote the algorithm again in `src/bicycle.py` and compared it with the trajectory of the original code (`data/pythonrobotics_reference.csv`). The positions are identical: the largest difference is printed in section 6.1 and it is far below my criterion of 1e-9 m. The steering angles differ only by rounding (about 1e-15 rad).
 - **The physics of the method.** Four checks pass in the notebook and in `tests/`: the fast exact motor formula equals `solve_ivp`; the pure pursuit formula gives exactly 1/R on a circle; constant wheel voltages give the circle radius from the kinematics; the robot converges onto a straight line.
-- **The improvement for my robot.** On the same spiral, pure pursuit (Ld = 0.3 m, v = 0.25 m/s) is better than my first waypoint controller: the RMS cross-track error went from 3.8 cm to 1.8 cm and the time from 125 s to 54 s (numbers from the executed notebook, section 6.2).
+- **The improvement for the robot.** On the same spiral, pure pursuit (Ld = 0.3 m, v = 0.25 m/s) is better than the waypoint controller of the course notebook: the RMS cross-track error went from 3.8 cm to 1.8 cm and the time from 125 s to 54 s (numbers from the executed notebook, section 6.2).
 
 ## What did not reproduce / what I could not show
-- The source is a code example, not a paper with a figure and numbers, so my comparison is "my code vs the original code". It proves that I copied the algorithm correctly, not that the algorithm is good. The correctness of the formula comes from the analytic checks.
+- The source is a code example, not a paper with a figure and numbers, so my comparison is "my re-implementation vs the original code". It proves that I copied the algorithm correctly, not that the algorithm is good. The correctness of the formula comes from the analytic checks.
 - Everything is a **simulation**. I did not test on the real robot, so wheel slip, sensor delay and the real motor differences are not included.
 - The biggest error of pure pursuit is in the first seconds (about 11 cm): the robot starts looking along x, but the path starts going up. Pure pursuit cannot fix a bad start quickly.
-- I changed one detail of my first notebook: there the control signal of the previous step was given to the motor (one step delay). Now the current signal is used. With a step of 0.01 s this is a small difference, but the numbers of the waypoint controller are therefore not exactly the same as in the first notebook.
+- I changed one detail of the course notebook: there the control signal of the previous step was given to the motor (one step delay). Now the current signal is used. With a step of 0.01 s this is a small difference, but the numbers of the waypoint controller are therefore not exactly the same as in the course notebook.
 - For speed I replaced `solve_ivp` in every step by the exact solution of the linear motor equation. I verified this (check 1), but it is a change.
 
 ## What I would change

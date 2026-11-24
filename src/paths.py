@@ -13,10 +13,10 @@ def wrap_angle(angle: float) -> float:
 
 
 def spiral_path(n_points: int) -> tuple[np.ndarray, np.ndarray]:
-    """Moving spiral from my original notebook (two loops while moving right).
+    """Moving spiral from the course notebook (given by the professor) (two loops while moving right).
 
     x = -1 + cos(theta) + 0.5*theta,  y = sin(theta),  theta in [0, 4*pi]
-    Use n_points=21 for the sparse waypoints (original notebook) and a large
+    Use n_points=21 for the sparse waypoints (course notebook) and a large
     number (for example 800) for the dense path used by pure pursuit.
     """
     theta = np.linspace(0, 4 * np.pi, n_points)

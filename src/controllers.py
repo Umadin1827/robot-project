@@ -31,7 +31,7 @@ class ConstantVoltage:
 
 # ---------------------------------------------------------------- baseline
 class WaypointP:
-    """My controller from the original notebook: drive to waypoint after waypoint.
+    """Waypoint controller of the course notebook (given by the professor): drive to waypoint after waypoint.
 
         u_l = 8*distance - 1*heading_error
         u_r = 8*distance + 1*heading_error
@@ -93,10 +93,15 @@ def curvature(alpha: float, Ld: float) -> float:
 def wheel_speeds(v: float, kappa: float, B: float) -> tuple[float, float]:
     """Left and right wheel linear speeds [m/s] for speed v and curvature kappa.
 
-    v_left  = v * (1 - kappa*B/2)
-    v_right = v * (1 + kappa*B/2)
+    Written by me (Umadin1827). The turning rate is omega = v * kappa, and the
+    wheels are B/2 left and right of the centre, so they differ by +-omega*B/2:
+        v_left  = v - omega*B/2  =  v * (1 - kappa*B/2)
+        v_right = v + omega*B/2  =  v * (1 + kappa*B/2)
     """
-    return v * (1.0 - kappa * B / 2.0), v * (1.0 + kappa * B / 2.0)
+    omega = v * kappa
+    v_left = v - (omega * B) / 2
+    v_right = v + (omega * B) / 2
+    return v_left, v_right
 
 
 def speed_to_voltage(v_wheel: float, p: RobotParams) -> float:

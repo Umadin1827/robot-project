@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def test_motor_exact_equals_solve_ivp():
-    """Check 1: analytic motor step == scipy solve_ivp (same ODE, my own derivation)."""
+    """Check 1: analytic motor step == scipy solve_ivp (same ODE)."""
     state, dt = [0.3, 2.0], 0.01
     exact = motor_step_exact(tuple(state), u=5.0, dt=dt)
     ivp = motor_step_ivp(state, 5.0, 0.0, dt)

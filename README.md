@@ -6,8 +6,8 @@
 
 ## Summary
 I simulate a two-wheeled (differential drive) robot with DC motors that has to follow a spiral path.
-In my first notebook the robot drove from waypoint to waypoint with a simple P controller. Here I replace it with **pure pursuit**: the robot looks a distance `Ld` ahead on the path, computes the curvature `kappa = 2 sin(alpha) / Ld` of the circle to that target point, and turns it into voltages for the left and right motor.
-I check the code with four physics tests, reproduce the pure pursuit example of the PythonRobotics library (my own re-implementation gives the same trajectory) and compare the new controller with the old one on the spiral (cross-track error and time).
+The course notebook (given by the professor) lets the robot drive from waypoint to waypoint with a simple P controller. Here I replace it with **pure pursuit**: the robot looks a distance `Ld` ahead on the path, computes the curvature `kappa = 2 sin(alpha) / Ld` of the circle to that target point, and turns it into voltages for the left and right motor.
+I check the code with four physics tests, reproduce the pure pursuit example of the PythonRobotics library (my re-implementation gives the same trajectory) and compare the new controller with the old one on the spiral (cross-track error and time).
 The lecture is built as 9 timed sections (60 min), with an audience exercise (easy / medium / stretch).
 
 **Route:** A (reproduction of a published method / reference code).
@@ -40,16 +40,16 @@ If a different version of numpy/scipy/matplotlib is installed (for example on Co
 
 ## Sources and licences
 - R. C. Coulter, *Implementation of the Pure Pursuit Path Tracking Algorithm*, CMU-RI-TR-92-01, Carnegie Mellon University, 1992.
-- A. Sakai et al., *PythonRobotics: a Python code collection of robotics algorithms*, arXiv:1808.10703, 2018. Code: <https://github.com/AtsushiSakai/PythonRobotics> (`PathTracking/pure_pursuit/pure_pursuit.py`), **MIT licence**. I did not copy the file into this repository: `src/bicycle.py` is my own re-implementation of its algorithm with the same parameters, and `scripts/make_reference.py` downloads the original file at run time to create the reference trajectory in `data/`. That csv file contains only numbers produced by running the original code.
-- Motor model, robot kinematics, the waypoint controller and the spiral path come from my own first notebook "Differential drive robot path following".
-- My own code in this repository is under the MIT licence (see `LICENSE`).
+- A. Sakai et al., *PythonRobotics: a Python code collection of robotics algorithms*, arXiv:1808.10703, 2018. Code: <https://github.com/AtsushiSakai/PythonRobotics> (`PathTracking/pure_pursuit/pure_pursuit.py`), **MIT licence**. I did not copy the file into this repository: `src/bicycle.py` is a re-implementation (written with the AI assistant) of its algorithm with the same parameters, and `scripts/make_reference.py` downloads the original file at run time to create the reference trajectory in `data/`. That csv file contains only numbers produced by running the original code.
+- Motor model, robot kinematics, the waypoint controller and the spiral path come from the course notebook "Differential drive robot path following", given by the professor. They are not my work.
+- The new code in this repository is under the MIT licence (see `LICENSE`); the licence does not cover the professor's part.
 - Snider, *Automatic Steering Methods for Autonomous Automobile Path Tracking*, CMU-RI-TR-09-08, 2009 (further reading only).
 
 ## AI assistant declaration
 I used the AI assistant **Claude (Anthropic)** for this project:
 - **Notebook and structure:** planning the 60-minute lecture structure, and writing the first version of `lecture.ipynb` and `solutions.ipynb` (text and code cells).
-- **Code:** writing the pure pursuit controller (`src/controllers.py`: `find_target_index`, `curvature`, `wheel_speeds`, `speed_to_voltage`, `PurePursuit`), the fast exact motor step, `src/bicycle.py`, `src/metrics.py`, `src/plotting.py`, `scripts/make_reference.py` and the tests in `tests/`.
+- **Code:** writing the pure pursuit controller (`src/controllers.py`: `find_target_index`, `curvature`, `speed_to_voltage`, `PurePursuit`; `wheel_speeds` see below), the fast exact motor step, `src/bicycle.py`, `src/metrics.py`, `src/plotting.py`, `scripts/make_reference.py` and the tests in `tests/`.
 - **Text:** first drafts of this README and of `REFLECTION.md`.
 
-Not written with AI: the original DC motor ODE `dc_motor`, the kinematics formulas (`update_pose`), the waypoint P controller and the spiral path. They come from my first notebook, which is my own work.
-I ran all code, and I checked the results and explanations myself.
+From the professor's course notebook (not written by me and not by the AI): the DC motor ODE `dc_motor`, the kinematics formulas (`update_pose`), the waypoint P controller `WaypointP` and the spiral path.
+All new code and text listed above was written with the AI assistant, **except the function `wheel_speeds` in `src/controllers.py`: I wrote it myself (the AI assistant had written a first version, which I replaced with my own after studying the method; I tested it with the tests and the notebook).** I read it, ran it and checked the results, and I am responsible for the submission.

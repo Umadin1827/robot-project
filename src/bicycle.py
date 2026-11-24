@@ -1,9 +1,9 @@
-"""My own re-implementation of the PythonRobotics pure pursuit example.
+"""Re-implementation (written with AI assistance) of the PythonRobotics pure pursuit example.
 
 Source (MIT licence): Atsushi Sakai et al., PythonRobotics,
 https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathTracking/pure_pursuit/pure_pursuit.py
 
-The source steers a car (bicycle model).  I wrote the same algorithm again
+The source steers a car (bicycle model).  The same algorithm is written again here
 with the same numbers, to check that my pure pursuit gives the same result.
 The idea (curvature from alpha and Ld) is identical to the robot version;
 only the last step differs: the car converts curvature into a steering angle,

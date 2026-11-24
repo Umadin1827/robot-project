@@ -1,16 +1,16 @@
-"""DC motor model (my code from the original notebook) and a fast exact version."""
+"""DC motor model (from the course notebook given by the professor) and a fast exact version."""
 from __future__ import annotations
 
 import numpy as np
 from scipy.integrate import solve_ivp
 
-# Motor constants from my original notebook
+# Motor constants from the course notebook
 T_M = 0.08   # electromechanical time constant [s]
 K_E = 0.5    # motor constant [V*s/rad]  (steady-state speed = u / K_E)
 
 
 def dc_motor(t: float, y: list[float], u: float) -> list[float]:
-    """Right-hand side of the DC motor ODE (written by me, original notebook).
+    """Right-hand side of the DC motor ODE (from the course notebook given by the professor).
 
     State y = [theta, omega]  (angle [rad], angular speed [rad/s]).
     Input u = control voltage [V].

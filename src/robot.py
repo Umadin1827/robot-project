@@ -10,7 +10,7 @@ from .motor import motor_step_exact, K_E
 
 @dataclass          # Technique: dataclass - parameters in one clean object
 class RobotParams:
-    """All robot numbers in one place (values from my original notebook)."""
+    """All robot numbers in one place (values from the course notebook given by the professor)."""
     B: float = 0.15        # distance between the wheels [m]
     r: float = 0.026       # wheel radius [m]
     dt: float = 0.01       # simulation time step [s]
@@ -37,7 +37,7 @@ class Result:
 
 def update_pose(theta_l: float, theta_r: float, prev_path: float,
                 p: RobotParams, x: float, y: float, yaw0: float = 0.0):
-    """Kinematics from wheel angles (my formulas from the original notebook).
+    """Kinematics from wheel angles (formulas from the course notebook given by the professor).
 
     path   = (theta_r + theta_l) * r / 2     distance travelled
     course = (theta_r - theta_l) * r / B     heading angle
